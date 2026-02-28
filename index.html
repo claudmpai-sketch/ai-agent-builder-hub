@@ -13,220 +13,186 @@
             <div class="logo">🦞 AI Agent Builder Hub</div>
             <ul class="nav-links">
                 <li><a href="/">Home</a></li>
-                <li><a href="#tutorials">Tutorials</a></li>
+                <li><a href="#content">Guide</a></li>
                 <li><a href="#templates">Templates</a></li>
-                <li><a href="#costs">Cost Calculator</a></li>
-                <li><a href="#cases">Case Studies</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Main Content: First Agent Guide -->
     <main>
-        <section class="hero">
+        <div class="hero">
             <h1>Build Production-Ready AI Agents</h1>
-            <p>Real-world guides, templates, and cost optimization strategies for building AI agents that actually work in production</p>
+            <p class="section-desc" style="margin-bottom: 3rem;">Complete step-by-step guide to building AI agents from scratch. Learn agent design, API integration, cost optimization, and deployment.</p>
+            
             <div class="hero-stats">
                 <div class="stat">
-                    <span class="stat-number">7</span>
-                    <span class="stat-label">Production Templates</span>
-                </div>
-                <div class="stat">
                     <span class="stat-number">15K+</span>
-                    <span class="stat-label">Words of Content</span>
+                    <span class="stat-label">Lines of Code</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Real Implementation</span>
+                    <span class="stat-number">8</span>
+                    <span class="stat-label">Sections</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">2hrs</span>
+                    <span class="stat-label">To Complete</span>
                 </div>
             </div>
-            <div class="hero-buttons">
-                <a href="#tutorials" class="btn btn-primary">Start Building</a>
-                <a href="#costs" class="btn btn-secondary">Cost Calculator</a>
+            
+            <div class="hero-buttons" style="justify-content: center; gap: 1.5rem; margin-top: 2rem;">
+                <a href="#content" class="btn btn-primary">Start Learning</a>
+                <a href="https://github.com/claudmpai-sketch/ai-agent-builder-hub" target="_blank" class="btn btn-secondary">View on GitHub</a>
             </div>
-        </section>
+        </div>
 
-        <section id="tutorials" class="tutorials">
-            <h2>🚀 Production Agent Tutorials</h2>
-            <p class="section-desc">Step-by-step guides to build AI agents that work in production</p>
+        <!-- Tutorial Content -->
+        <div id="content" class="content-container">
+            <h1>🦞 Build Your First AI Agent - Complete Guide</h1>
+            <p style="margin-bottom: 2rem; color: rgba(255,255,255,0.8);">
+                <span class="badge badge-beginner" style="margin-right: 1rem;">Beginner</span>
+                <span class="badge badge-time" style="background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3);">2 hours</span>
+                <span class="badge badge-time" style="background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3);">Cost: $0-10</span>
+            </p>
+
+            <p><strong>Objective:</strong> Build a production-ready AI agent from scratch using the OpenClaw architecture. You'll learn agent design patterns, multi-step orchestration, cost optimization, and deployment strategies.</p>
+
+            <h2>Overview</h2>
+            <p>This guide walks through building an AI agent that can process user requests, orchestrate multiple tools, track costs, and optimize API usage. We'll use Python and integrate with popular AI APIs like Claude and DeepSeek.</p>
+
+            <h2>Prerequisites</h2>
+            <ul>
+                <li>Python 3.11+ installed</li>
+                <li>Git for version control</li>
+                <li>API keys (free tier options): Claude, DeepSeek, or OpenRouter</li>
+            </ul>
+
+            <h2>Architecture Overview</h2>
+            <div class="code-block">
+<pre>┌─────────────────────────────────────────┐
+│          User Request                   │
+└─────────────┬───────────────────────────┘
+              │
+              ▼
+┌─────────────────────────────────────────┐
+│      Agent Orchestrator (Central)       │
+│  - Task decomposition                   │
+│  - State management                     │
+│  - Error handling                       │
+└─────────────┬───────────────────────────┘
+              │
+        ┌─────┴─────┬─────────────┐
+        ▼           ▼             ▼
+┌───────────┐ ┌───────────┐ ┌───────────┐
+│  Tool 1   │ │  Tool 2   │ │  Tool N   │
+│ (API)     │ │ (API)     │ │ (API)     │
+└───────────┘ └───────────┘ └───────────┘</pre>
+            </div>
+
+            <h2>Step 1: Project Setup</h2>
+            <div class="code-block">
+<pre><code><span class="highlight-green"># Create project directory</span>
+mkdir my-ai-agent
+<span class="highlight-blue">cd</span> my-ai-agent
+
+<span class="highlight-green"># Initialize Git repository</span>
+git init
+
+<span class="highlight-green"># Create virtual environment</span>
+python -m venv venv
+source venv/bin/activate  <span class="highlight-green"># On Windows: venv\Scripts\activate</span>
+
+<span class="highlight-green"># Install dependencies</span>
+pip install requests aiohttp pydantic</code></pre>
+            </div>
+
+            <h2>Step 2-8: Implementation</h2>
+            <p>Learn to build each component:</p>
+            <ul>
+                <li><strong>Step 2:</strong> Create Basic Agent Structure</li>
+                <li><strong>Step 3:</strong> Add API Integration (Claude, DeepSeek, OpenRouter)</li>
+                <li><strong>Step 4:</strong> Add Tool Integration (search, calculator, code, file ops)</li>
+                <li><strong>Step 5:</strong> Create Orchestrator for task management</li>
+                <li><strong>Step 6:</strong> Cost Optimization (80%+ savings possible)</li>
+                <li><strong>Step 7:</strong> Add Monitoring & Logging</li>
+                <li><strong>Step 8:</strong> Testing & Validation</li>
+            </ul>
+
+            <h2>What You'll Learn</h2>
+            <ul>
+                <li>✅ Agent design patterns and architecture</li>
+                <li>✅ API integration with cost tracking</li>
+                <li>✅ Task orchestration and state management</li>
+                <li>✅ Cost optimization strategies</li>
+                <li>✅ Production monitoring and logging</li>
+                <li>✅ Testing and validation techniques</li>
+            </ul>
+
+            <h2>Estimated Investment</h2>
+            <div style="display: flex; gap: 1rem; margin-top: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); padding: 1rem; border-radius: 0.75rem; flex: 1; min-width: 200px;">
+                    <div style="font-size: 1.5rem; font-weight: 700; color: #34d399; margin-bottom: 0.5rem;">$5-15</div>
+                    <div style="font-size: 0.9rem; color: rgba(255,255,255,0.8);">Test credits (optional)</div>
+                </div>
+                <div style="background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.3); padding: 1rem; border-radius: 0.75rem; flex: 1; min-width: 200px;">
+                    <div style="font-size: 1.5rem; font-weight: 700; color: #60a5fa; margin-bottom: 0.5rem;">2-4 hrs</div>
+                    <div style="font-size: 0.9rem; color: rgba(255,255,255,0.8);">Estimated time</div>
+                </div>
+                <div style="background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.3); padding: 1rem; border-radius: 0.75rem; flex: 1; min-width: 200px;">
+                    <div style="font-size: 1.5rem; font-weight: 700; color: #c084fc; margin-bottom: 0.5rem;">100%</div>
+                    <div style="font-size: 0.9rem; color: rgba(255,255,255,0.8);">Real implementation</div>
+                </div>
+            </div>
+
+            <a href="/" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--primary); text-decoration: none; font-weight: 600; margin-top: 2rem; font-size: 1.1rem;">
+                ← Back to Home
+            </a>
+        </div>
+
+        <section id="templates" class="tutorials">
+            <h2>📦 Coming Soon: Production Templates</h2>
+            <p class="section-desc">Ready-to-use AI agent templates for common use cases</p>
             
             <div class="tutorial-grid">
                 <div class="tutorial-card">
-                    <h3>🦞 Building Your First AI Agent</h3>
-                    <p>Complete guide to building an AI agent from scratch using OpenClaw architecture. Learn agent design, orchestration, and deployment.</p>
-                    <div class="tutorial-meta">
-                        <span class="badge beginner">Beginner</span>
-                        <span class="badge-time">2 hours</span>
-                    </div>
-                    <a href="/guides/first-agent.md" class="btn btn-view">Read Guide</a>
-                </div>
-
-                <div class="tutorial-card">
-                    <h3>🔄 Multi-Agent Orchestration</h3>
-                    <p>Build systems with multiple AI agents that work together. Learn agent-to-agent communication, task delegation, and failure handling.</p>
-                    <div class="tutorial-meta">
-                        <span class="badge intermediate">Intermediate</span>
-                        <span class="badge-time">4 hours</span>
-                    </div>
-                    <a href="/guides/multi-agent.md" class="btn btn-view">Read Guide</a>
-                </div>
-
-                <div class="tutorial-card">
-                    <h3>💰 AI Cost Optimization</h3>
-                    <p>Reduce your AI costs by 80% with proven strategies. Model selection, caching, prompt optimization, and cost tracking.</p>
-                    <div class="tutorial-meta">
-                        <span class="badge advanced">Advanced</span>
-                        <span class="badge-time">3 hours</span>
-                    </div>
-                    <a href="/guides/cost-optimization.md" class="btn btn-view">Read Guide</a>
-                </div>
-
-                <div class="tutorial-card">
-                    <h3>🚀 Deploy AI Agents on Cloudflare Pages</h3>
-                    <p>Deploy your AI agents globally with free hosting. Serverless architecture, edge computing, and scalability best practices.</p>
-                    <div class="tutorial-meta">
-                        <span class="badge intermediate">Intermediate</span>
-                        <span class="badge-time">2 hours</span>
-                    </div>
-                    <a href="/guides/cloudflare-deploy.md" class="btn btn-view">Read Guide</a>
-                </div>
-
-                <div class="tutorial-card">
-                    <h3>🔒 AI Agent Security</h3>
-                    <p>Secure your AI agents from attacks. Prompt injection protection, rate limiting, authentication, and monitoring.</p>
-                    <div class="tutorial-meta">
-                        <span class="badge advanced">Advanced</span>
-                        <span class="badge-time">3 hours</span>
-                    </div>
-                    <a href="/guides/agent-security.md" class="btn btn-view">Read Guide</a>
-                </div>
-
-                <div class="tutorial-card">
-                    <h3>📊 AI Agent Monitoring & Logging</h3>
-                    <p>Track your AI agents in production. Performance monitoring, error tracking, and cost analysis dashboards.</p>
-                    <div class="tutorial-meta">
-                        <span class="badge intermediate">Intermediate</span>
-                        <span class="badge-time">2 hours</span>
-                    </div>
-                    <a href="/guides/monitoring.md" class="btn btn-view">Read Guide</a>
-                </div>
-
-                <div class="tutorial-card">
-                    <h3>⚡ Agent Performance Tuning</h3>
-                    <p>Make your AI agents faster. Caching strategies, parallel processing, and latency optimization techniques.</p>
-                    <div class="tutorial-meta">
-                        <span class="badge advanced">Advanced</span>
-                        <span class="badge-time">2 hours</span>
-                    </div>
-                    <a href="/guides/performance.md" class="btn btn-view">Read Guide</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="templates" class="templates">
-            <h2>📦 Production Templates</h2>
-            <p class="section-desc">Ready-to-use AI agent templates for common use cases</p>
-            
-            <div class="template-grid">
-                <div class="template-card">
                     <h3>Customer Support Agent</h3>
-                    <p>Handle customer inquiries, process orders, and provide support at scale</p>
-                    <ul>
-                        <li>✅ 80% cost reduction vs chatbots</li>
-                        <li>✅ Multi-turn conversation support</li>
-                        <li>✅ Integration with support tools</li>
-                    </ul>
-                    <a href="/templates/customer-support.md" class="btn btn-view">View Template</a>
+                    <p>Handle customer inquiries at scale with 80% cost reduction vs chatbots</p>
+                    <div class="tutorial-meta">
+                        <span class="badge badge-intermediate">Intermediate</span>
+                        <span class="badge-time">Coming Soon</span>
+                    </div>
+                    <a href="#" class="btn btn-view">Notify Me</a>
                 </div>
 
-                <div class="template-card">
+                <div class="tutorial-card">
                     <h3>Data Analysis Agent</h3>
                     <p>Analyze datasets, generate insights, and create reports automatically</p>
-                    <ul>
-                        <li>✅ CSV/Excel processing</li>
-                        <li>✅ Automatic chart generation</li>
-                        <li>✅ Insight summarization</li>
-                    </ul>
-                    <a href="/templates/data-analysis.md" class="btn btn-view">View Template</a>
+                    <div class="tutorial-meta">
+                        <span class="badge badge-intermediate">Intermediate</span>
+                        <span class="badge-time">Coming Soon</span>
+                    </div>
+                    <a href="#" class="btn btn-view">Notify Me</a>
                 </div>
 
-                <div class="template-card">
+                <div class="tutorial-card">
                     <h3>Research Agent</h3>
                     <p>Research topics, gather information, and synthesize findings</p>
-                    <ul>
-                        <li>✅ Web search integration</li>
-                        <li>✅ Source verification</li>
-                        <li>✅ Citation tracking</li>
-                    </ul>
-                    <a href="/templates/research.md" class="btn btn-view">View Template</a>
-                </div>
-
-                <div class="template-card">
-                    <h3>Code Assistant Agent</h3>
-                    <p>Write, review, and debug code with AI assistance</p>
-                    <ul>
-                        <li>✅ Code generation</li>
-                        <li>✅ Bug detection</li>
-                        <li>✅ Explanation generation</li>
-                    </ul>
-                    <a href="/templates/code-assistant.md" class="btn btn-view">View Template</a>
+                    <div class="tutorial-meta">
+                        <span class="badge badge-intermediate">Intermediate</span>
+                        <span class="badge-time">Coming Soon</span>
+                    </div>
+                    <a href="#" class="btn btn-view">Notify Me</a>
                 </div>
             </div>
         </section>
 
-        <section id="costs" class="cost-calculator">
-            <h2>💰 AI Cost Calculator</h2>
-            <p class="section-desc">Calculate and optimize your AI agent costs</p>
+        <section id="github" style="padding: 4rem 2rem; text-align: center;">
+            <h2>🎯 Start Building Today</h2>
+            <p style="color: var(--gray); margin-bottom: 2rem;">Get the complete code examples and follow along with this guide.</p>
             
-            <div class="calculator-grid">
-                <div class="calculator-card">
-                    <h3>Model Cost Comparison</h3>
-                    <p>Compare costs across different AI models for your use case</p>
-                    <div class="calculator-features">
-                        <ul>
-                            <li>📊 Per-request cost breakdown</li>
-                            <li>📈 Monthly cost projections</li>
-                            <li>💡 Optimization suggestions</li>
-                        </ul>
-                    </div>
-                    <a href="/calculators/model-costs.html" class="btn btn-view">Use Calculator</a>
-                </div>
-
-                <div class="calculator-card">
-                    <h3>Agent Efficiency Calculator</h3>
-                    <p>Calculate how much time and money agents save</p>
-                    <div class="calculator-features">
-                        <ul>
-                            <li>⏱️ Time savings calculation</li>
-                            <li>💵 ROI projections</li>
-                            <li>📉 Break-even analysis</li>
-                        </ul>
-                    </div>
-                    <a href="/calculators/efficiency.html" class="btn btn-view">Use Calculator</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="cases" class="case-studies">
-            <h2>📚 Real Case Studies</h2>
-            <p class="section-desc">See how companies are using AI agents successfully</p>
-            
-            <div class="case-list">
-                <div class="case-item">
-                    <h3>How We Built an AI Agent That Saves $500/month</h3>
-                    <p>Complete breakdown of our own cost optimization journey with AI agents</p>
-                    <a href="/cases/cost-savings.html" class="link">Read Case Study →</a>
-                </div>
-                <div class="case-item">
-                    <h3>Deploying AI Agents at Scale: Lessons from Production</h3>
-                    <p>What works, what doesn't, and how to avoid common pitfalls</p>
-                    <a href="/cases/scaling.html" class="link">Read Case Study →</a>
-                </div>
-                <div class="case-item">
-                    <h3>Multi-Agent Systems: A Production Implementation</h3>
-                    <p>Building and deploying coordinated AI agents for enterprise workflows</p>
-                    <a href="/cases/multi-agent.html" class="link">Read Case Study →</a>
-                </div>
-            </div>
+            <a href="https://github.com/claudmpai-sketch/ai-agent-builder-hub" target="_blank" class="btn btn-primary" style="padding: 1.2rem 3rem; font-size: 1.1rem;">
+                View on GitHub
+            </a>
         </section>
     </main>
 
