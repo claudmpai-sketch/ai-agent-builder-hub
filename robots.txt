@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+
+Sitemap: https://ai-agent-builder-hub.pages.dev/sitemap.xml
